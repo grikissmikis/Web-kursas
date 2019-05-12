@@ -1,0 +1,27 @@
+body {
+    border-style: double;
+    border-width: 3px;
+    font-family: 'Anonymous Pro', monospace;
+    text-align: center;
+    font-size: 13px;
+}
+a:hover {
+    color:darkorange;  
+}
+ul li {
+display:inline;
+margin: 10px;
+}
+div {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-content: center;
+    width: 540px;
+}
+img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
