@@ -8,46 +8,45 @@
         <meta name="author" content="Gintarė Salnikaitė">
         <title>Paparastas omletas | HTML3</title>
     </head>
-    <body style="background-color:beige">
+    <body style="background-color:beige; max-width: 768px;">
+        <div id="header">
         <h1><b>Paprastas omletas</b></h1>
         <p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3BGA_NAtQisT598TbgeRpyVO8FPcimwPi7libaH77TmMYMRi" alt="Paprastas omletas" title="Paprastas omletas" width="530">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3BGA_NAtQisT598TbgeRpyVO8FPcimwPi7libaH77TmMYMRi" alt="Paprastas omletas" title="Paprastas omletas" width="540" style="display: flex; width: 70%;">
         </p>
-        <table width=28%>
-            <tr>
-                <td style="text-align:left;"><i>2 porcijos</i></td>
-                <td style="text-align:left; width: 12%;"><i>30 min.</i></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th style="text-align: left;">Ingredientai:</th>
-            </tr>
-            <tr>
-                <td>
-                    <ul style="list-style-type:none;">
-                        <li>6 kiaušinai</li>
-                        <li>100 ml pieno</li>
-                        <li>50 ml grietinėlės</li>
-                        <li>žiupsnelis druskos</li>
-                    </ul>
-                </td>
-            <tr>
-                <th style="text-align: left;"><u>Gaminimas:</u></th>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <ol>
-                        <li>Kiaušinius gerai išplakite su prieskoniais, pienu ir grietinėle.</li>
-                        <li>Keptuvėje ištirpinkite lydytą sviestą ir įkaitus supilkite kiaušinių plakinį.</li>
-                        <li>Kepkite nemaišant ant mažos ugnies, kol apatinė pusė iškeps (ji turi lengvai atkibti nuo keptuvės dugno).</li>
-                        <li>Apverskite ir palaukite, kol iškeps antra pusė.</li>
-                        <li>Patiekite su šviežiomis daržovėmis.</li>
-                    </ol>
-                </td>
-            </tr>
-        </table>
+        </div>
+        <div style="width: 70%">
+            <ul style="list-style-type:none; display: flex; justify-content: space-between; padding-left: 20px">
+                <li><i>2 porcijos</i></li>
+                <li style="margin-right: 20px"><i>30 min.</i></li>
+            </ul>
+        </div>
+        <div class="row" style="display: flex">
+            <div style="display: flex; width: 20%; min-width: 130px;">
+                <ul style="list-style-type:none; padding-left: 20px;">
+                    <li style="font-size: 20px; padding-bottom: 15px;"><b><u>Ingredientai:</u></b>
+                        <ul style="font-size: 16px; padding-top: 15px; list-style-type:none; padding: 10px 0 0 0;">
+                            <li>6 kiaušiniai</li>
+                            <li>100 ml pieno</li>
+                            <li>50 ml grietinėlės</li>
+                            <li>žiupsnelis druskos</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div style="display: flex; width: 47%;">
+                <ul style="font-size: 20px; list-style-type: none; margin-top: 16px;">
+                    <li><b>Gaminimas:</b>
+                        <ol style="font-size: 16px; padding-top: 15px; padding: 10px 0 0 20px;">
+                            <li>Kiaušinius gerai išplakite su prieskoniais, pienu ir grietinėle.</li>
+                            <li>Keptuvėje ištirpinkite lydytą sviestą ir įkaitus supilkite kiaušinių plakinį.</li>
+                            <li>Kepkite nemaišant ant mažos ugnies, kol apatinė pusė iškeps (ji turi lengvai atkibti nuo keptuvės dugno).</li>
+                            <li>Apverskite ir palaukite, kol iškeps antra pusė.</li>
+                            <li>Patiekite su šviežiomis daržovėmis.</li>
+                        </ol>
+                    </li>
+                </ul>    
+            </div>
+        </div>
     </body>
 </html>
