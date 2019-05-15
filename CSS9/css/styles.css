@@ -1,0 +1,55 @@
+body {
+    background-color:beige;
+    font-family:sans-serif;
+}
+img {
+    height: 150px;
+    width: 157px;
+    object-fit: cover;
+}
+.row {
+    display: flex;
+    align-content: center;
+}
+.column {
+    width: 157px;
+    flex-direction: row;
+    background-color: azure;
+    margin: 3px;
+    padding: 20px;
+    border-style: outset;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 16px;
+    font-weight: normal;
+    color:darkslateblue;
+}
+p {
+    margin: 0;
+    font-size: 14px;
+}
+h2 {
+    color: dimgray;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+h3 {
+    text-decoration: line-through;
+    color: dimgray;
+    font-weight: normal;
+    margin: 0;
+    font-size: 14px;
+}
+input {
+    color: white;
+    background-color: chartreuse;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.note {
+    font-size: 10px;
+    color: darkolivegreen;
+    margin-top: 10px;
+}
