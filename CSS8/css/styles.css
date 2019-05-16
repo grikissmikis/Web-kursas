@@ -1,0 +1,48 @@
+.flex-container {
+    flex: auto;
+    background-color: rgb(252, 249, 156);
+    padding: 20px;
+    margin-bottom: 5px;
+}
+#registravimas {
+    border-radius: 5px;
+    margin: 0px;
+}
+label {
+    display: inline-block;
+    width: 225px;
+}
+input {
+    display: inline-block;
+    border-radius: 5px;
+    height: 30px;
+    width: 285px;
+    margin: 2px;
+}
+#rezultatai {
+    background-color: rgb(195, 252, 181);
+}
+table {
+    background-color: rgb(195, 252, 181);
+    width: 700px; 
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#pirma-eilute {
+    background-color: rgb(172, 147, 226);
+    border-bottom: 1px solid black;
+}
+.rezultatine-lentele {
+    height: 40px;
+}
+td {
+    padding-left: 10px;
+    border: 2px solid black;
+    border-top: 1px solid black;
+}
+#pirmas-stulpelis {
+    width: 66%;
+}
+#antras-stulpelis {
+    width: 11%;
+}
