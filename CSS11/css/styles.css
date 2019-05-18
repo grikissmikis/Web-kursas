@@ -1,0 +1,28 @@
+.navigation {
+    background-color: olivedrab;
+}
+.nav-link {
+    padding: 20px 16px;
+    color: white;
+}
+.card-body {
+    border-radius: 5px;
+    border-style: outset;
+    border-width: 2px;
+}
+.card-img-top {
+    margin-bottom: 15px;
+}
+.card-text {
+    padding-bottom: 70px;
+}
+.card-deck {
+    margin: 30px 0px;
+}
+h1 {
+    margin: 20px 0px;
+    font-size: 50px;
+}
+a:hover {
+    color: yellowgreen;
+}
