@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vardai | JS8</title>
+    </head>
+    <body>
+        <div>
+            <h2>Paspauskite mygtuką ir išnyks trečiasis elementas.</h2>
+            <p id="my-list"></p>
+            <button onclick="myFunction()">Spausti</button>
+        </div>
+        <script>
+            var persons = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+            document.getElementById("my-list").innerHTML = persons;
+            function myFunction () {
+                persons.splice(2,1);
+                document.getElementById("my-list").innerHTML = persons;
+                console.log(persons);
+            }
+            /* var invisible = persons.indexOf("Martynas");
+            document.getElementById("my-list").innerHTML = persons;
+            function myFunction () {
+                delete persons[2];
+                document.getElementById("my-list").innerHTML = persons;
+                console.log(persons);
+            } */
+        </script>
+    </body>
+</html>
