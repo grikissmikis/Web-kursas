@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prisijungimas | JS5</title>
+    </head>
+    <body>
+        <div>
+            <h2>Įveskite vardą ir pavardę žemiau pateiktuose laukeliuose:</h2>
+            <form class="my-form">
+                <input id="name" type="text" placeholder="Name">
+                <br>
+                <input id="surname" type="text" placeholder="Surname">
+                <br>
+                <input type="submit" value="Įvesti">
+            </form>
+        </div>
+        <script>
+            var name, surname, myFunction;
+            
+            name = document.getElementById("name");
+            surname = document.getElementById("surname");
+            
+            document.querySelector("form.my-form").addEventListener("submit", function (e) {
+                e.preventDefault();
+              
+                function myFunction (name, surname) {
+                    return name + " " + surname + " kątik prisijungė";
+                }
+                console.log(name.value + " " + surname.value + " kątik prisijungė");
+            });
+        </script>
+    </body>
+</html>
