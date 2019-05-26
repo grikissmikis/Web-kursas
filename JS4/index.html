@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dalyba | JS4</title>
+    </head>
+    <body>
+        <div>
+            <h2>Dalybos rezultatą sužinosite paspaudę mygtuką.</h2>
+            <input type="button" value="Spausk čia" onclick="myAlert()">
+        </div>
+        <script>
+            var myFunction, myAlert, result, a, b;
+            a = 10;
+            b = 5;
+            function myFunction(a, b) {
+                return a / b;
+            }
+            result = a / b;
+            function myAlert() {
+                alert("Dalybos rezultatas" + " " + result + ".");
+            }
+            console.log(result);
+        </script>
+    </body>
+</html>
