@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prekės aprašymas | JS3</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 300px;
+            }
+            table, tr, td {
+                border: 3px solid purple;
+            }
+        </style>
+    </head>
+    <body>
+
+
+    <script>
+        var prekes = [{
+            title: "Nešiojamas kompiuteris",
+            description: "NVIDIA GeForce GTX 1070 grafinis adapteris su Max-Q4 technologija, Intel Core 8th Generation procesorius ir pažangi aušinimo sistema suteikia reikiamą galią, nesvarbu, kur būtumėte.",
+            discount: 30,
+            isItNew: true,
+            color: [0,1,2,3],
+            price: 699.00,
+            currency: "EUR"
+            }];
+
+        var result = '';
+
+        prekes.forEach(function(item) {
+
+            result += '<table><tbody>';
+
+            result += '<tr><td>Pavadinimas</td><td>' + item.title + '</td></tr>';
+            result += '<tr><td>Aprašymas</td><td>' + item.description + '</td></tr>';
+            
+            result += '<tr><td>Nuolaida</td><td>' + item.discount + '</td><tr>';
+
+            result += '<tr><td>Spalva</td><td><select>';
+            item.color.forEach(function(color) {
+                if (color === 0) {
+                    result += '<option value="juoda">Juoda</option>';
+                } else if (color === 1) {
+                    result += '<option value="raudona">Raudona</option>';
+                } else if (color === 2) {
+                    result += '<option value="zalia">Žalia</option>';
+                } else if (color === 3) {
+                    result += '<option value="sidabrine">Sidabrinė</option>';
+                }
+            });
+            result += '</select></td>';
+            
+            var txt1 = 'Nauja';
+            var txt2 = 'Naudota';
+
+            if (item.isItNew) {
+                var condition = txt1.fontcolor("#42a533");
+            } else {
+                var condition = txt2.fontcolor("#020202");
+            }
+            
+            result += '<tr><td>Būklė</td><td>' + condition + '</td></tr>';
+
+            if (item.discount !== 0) {
+                item.price = item.price * (100 - item.discount) / 100;
+            }
+            result += '<tr><td>Kaina</td><td>' + item.price + '</td></tr>';
+            result += '<tr><td>Valiuta</td><td>' + item.currency + '</td></tr>';
+
+            result += '</tbody></table>';
+        });
+
+        document.write(result);
+    </script>
+
+    </body>
+</html>
