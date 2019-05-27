@@ -12,7 +12,15 @@ ul li {
 display:inline;
 margin: 10px;
 }
-div {
+#first-hr {
+    width: 600px;
+    border: 2px solid grey;
+}
+#second-hr {
+    width: 600px;
+    border: 1px solid grey;
+}
+p {
     max-width: 80%;
     margin: auto;
     margin-top: 20px;
@@ -24,4 +32,27 @@ img {
     max-width: 80%;
     max-height: 80%;
 }
-
+@media screen and (max-width: 480px) {
+    ul {
+        float: left;
+        display: inline-grid;
+        text-align: left;
+        margin: 10px 10px;
+        padding: 0px;
+        width: 100%;
+    }
+    p {
+        float: left;
+        text-align: left;
+        margin: 20px;
+        width: 100%;
+    }
+    img {
+        float: left;
+        margin: 20px;
+        width: 100%;
+    }
+    body {
+        border-style: none;
+    }
+}
