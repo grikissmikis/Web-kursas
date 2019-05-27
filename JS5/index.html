@@ -17,18 +17,18 @@
             </form>
         </div>
         <script>
-            var name, surname, myFunction;
+            var firstname, surname, myFunction;
             
-            name = document.getElementById("name");
+            firstname = document.getElementById("name");
             surname = document.getElementById("surname");
             
             document.querySelector("form.my-form").addEventListener("submit", function (e) {
                 e.preventDefault();
               
-                function myFunction (name, surname) {
+                function myFunction (firstname, surname) {
                     return name + " " + surname + " kątik prisijungė";
                 }
-                console.log(name.value + " " + surname.value + " kątik prisijungė");
+                console.log(firstname.value + " " + surname.value + " kątik prisijungė");
             });
         </script>
     </body>
