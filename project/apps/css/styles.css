@@ -1,0 +1,718 @@
+* {
+    box-sizing: border-box; 
+}
+p {
+    font-size: 15px;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    background-image: url("../images/background_photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(0, 0, 0);
+}
+.header {
+    padding: 0px 200px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#logo {
+    width: 180px;
+    height: 180px;
+}
+.top-nav {
+    display: flex;
+    padding: 10px 200px;  
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+.top-nav a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.top-nav a:hover {
+    color: rgb(191, 191, 191);
+}
+.nav-login a:hover {
+    color: rgb(191, 191, 191);
+}
+.nav-login {
+    display: flex;
+    margin-left: auto;
+}
+.top-nav .nav-login input {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    background-color: rgb(206, 204, 204);
+    width: 130px;
+}
+.top-nav .nav-login button {
+    float: right;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+.top-nav .nav-login button:hover {
+    background-color: rgb(224, 26, 26);
+    color: rgb(255, 255, 255); 
+}
+/* MAIN */
+.row {
+    display: flex;
+    padding: 0 200px;
+}
+main {
+    flex: auto;
+    width: 65%;
+    display: inline-flex;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-right: 20px;
+}
+.main {
+    width: 100%;
+    float: left;
+    flex-wrap: wrap;
+}
+#photo-team {
+    float: right;
+    width: 50%;
+    padding: 5px 0px 5px 10px;
+}
+aside {
+    flex: auto;
+    width: 35%;
+    background-color: rgb(94, 92, 92);
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    padding: 20px;   
+}
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* NEWS, RULES, ABOUT */
+
+#news-link {
+    text-decoration: none;
+    color: rgb(224, 26, 26);
+}
+.about-list {
+    font-size: 15px;
+    list-style-type: disc;
+}
+#rules-list {
+    font-size: 15px;
+}
+.rules-list2 {
+    font-size: 15px;
+    list-style-type: disc;
+}
+/* BANNERS */
+
+.friends-logo {
+    width: 75%;
+    margin: 20px 0px;
+}
+.logo-image {
+    margin: 10px 10px;
+}
+.friends-logo-hover:hover {
+    opacity: 0.6;
+}
+/* TOURNAMENTS */
+
+.tournament-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 10px 0px;
+    margin: 15px 0px;
+}
+.tournament-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.tournament-date {
+    width: 30%;
+    margin: 12px 0px;
+    color: rgb(209, 209, 209);
+}
+.tournament-name {
+    width: 70%;
+    margin: 12px 0px;
+}
+.tournament-list a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.tournament-list a:hover {
+    color: rgb(209, 209, 209);
+}
+#tournament-submit {
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: rgb(232, 232, 232);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    cursor: pointer;
+}
+#tournament-submit:hover {
+    background-color: rgb(224, 26, 26);
+    color: rgb(255, 255, 255);
+}
+/* END OF TOURNAMENTS */
+
+/* FOOTER */
+.footer {
+    display: flex;
+    opacity: 0.8;
+    width: 100%;
+    padding: 10px 200px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+}
+.footer-text 
+    #mob,
+    #faceb,
+    #envel {
+        padding: 5px;
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+}
+.footer-text li {
+    list-style: none;
+    margin: 0px 5px;
+}
+.copy-name {
+    text-align: end;
+    align-items: flex-end;
+    width: 50%;
+    vertical-align: middle;
+    line-height: 45px;
+    color: rgb(255, 255, 255);
+}
+.social-media {
+    text-align: start;
+    width: 50%;
+    align-items: flex-start;
+}
+.footer-text {
+    display: inline-flex;
+}
+
+/* END OF FOOTER */
+
+/* CONTACTS */
+
+.contacts-information {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#contacts input {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(206, 204, 204);
+    width: 300px;
+}
+#contacts textarea {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(206, 204, 204);
+    width: 300px;
+    height: 80px;
+}
+#contacts p {
+    margin: 6px 0px;
+}
+#contacts button {
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: rgb(232, 232, 232);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    cursor: pointer;
+}
+#contacts button:hover {
+    background-color: rgb(224, 26, 26);
+    color: rgb(255, 255, 255);
+}
+.our-contacts {
+    padding: 0px 13px 0px 0px;
+    width: 30%;
+}
+.contacts-form {
+    padding: 0px 13px;
+    width: 70%;
+}
+.our-contacts-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+}
+.our-contacts-list li {
+    margin: 6px 0px;
+}
+.our-contacts-list li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.our-contacts-list li a:hover {
+    color: rgb(224, 26, 26);
+}
+.fas, .far {
+    margin-right: 6px;
+    font-size: 15px;
+}
+/* END OF CONTACTS */
+
+/* SIGNUP */
+
+.signup-form input {
+    display: grid;
+    margin: 6px 0px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(206, 204, 204);
+    width: 400px;
+}
+.signup-form button {
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: rgb(232, 232, 232);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    cursor: pointer;
+}
+.signup-form button:hover {
+    background-color: rgb(224, 26, 26);
+    color: rgb(255, 255, 255);
+}
+/* END OF SIGNUP */
+
+/* MEDIA */
+@media only screen and (max-width: 1590px) {
+    .our-contacts {
+        padding: 0px 0px 0px 13px;
+        width: 45%;
+    }
+    .contacts-form {
+        padding: 0px 13px;
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 1338px) {
+    .header {
+        padding: 0px 100px;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+    }
+    .row {
+        display: flex;
+        padding: 0 100px;
+    }
+    .top-nav {   
+        flex-direction: row;
+        padding: 10px 100px;
+    }
+    .contacts-information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .our-contacts {
+        padding: 0px 0px 0px 13px;
+        width: 100%;
+    }
+    .contacts-form {
+        padding: 0px 13px;
+        width: 100%;
+    }
+    .footer {
+        display: flex;
+        opacity: 0.8;
+        width: 100%;
+        padding: 10px 100px;
+        text-align: center;
+        background: rgb(0, 0, 0);
+    }
+} 
+@media only screen and (max-width: 1160px) {
+    .header {
+        padding: 0px 50px;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+    }
+    .top-nav {   
+        flex-direction: row;
+        padding: 10px 50px;
+    }
+    .row {
+        display: flex;
+        padding: 0 50px;
+    }
+    main {
+        width: 55%;
+    }
+    aside {
+        width: 45%;
+    }
+    .footer {
+        display: flex;
+        opacity: 0.8;
+        width: 100%;
+        padding: 10px 50px;
+        text-align: center;
+        background: rgb(0, 0, 0);
+    }
+    .signup-form input {
+        display: grid;
+        margin: 6px 0px;
+        padding: 10px;
+        font-size: 15px;
+        border: none;
+        background-color: rgb(206, 204, 204);
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 1025px) {
+    .top-nav {   
+        flex-direction: column;
+    }
+    .nav-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .header {
+        padding: 0px 10px;
+    }
+    .top-nav {
+        padding: 10px 10px;
+    }
+    .row {
+        display: flex;
+        padding: 0 10px;
+    }
+    main {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+    .footer {
+        padding: 10px 10px;
+    }
+}
+@media only screen and (max-width: 795px) {
+    .header {
+        padding: 0px 10px;
+    }
+    .top-nav {
+        padding: 10px 10px;
+    }
+    .row {   
+        flex-direction: column;
+    }
+    .footer {
+        padding: 10px 10px;
+    }
+    #logo {
+        width: 170px;
+        height: 170px;
+    }
+    .nav-login {
+        display: flex;
+        margin-left: auto;
+    }
+    .top-nav .nav-login input {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 14px;
+        border: none;
+        background-color: rgb(206, 204, 204);
+        width: 120px;
+    }
+    .top-nav .nav-login button {
+        float: right;
+        border: none;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 5px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .top-nav a {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .row {
+        display: flex;
+        padding: 0 10px;
+    }
+    main {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+    .footer {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-text 
+        #mob,
+        #faceb,
+        #envel {
+            padding: 5px;
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+    }
+    .footer-text li {
+        list-style: none;
+        margin: 0px 5px;
+    }
+    .footer-text {
+        padding-left: 10px;
+    }
+    .copy-name {
+        text-align: center;
+        width: 100%;
+        color: rgb(255, 255, 255);
+    }
+    .copy-name p {
+        font-size: 15px;
+        margin: 0px 0px;
+    }
+    .social-media {
+        text-align: center;
+        width: 100%;
+    }
+    .footer-text {
+        display: inline-flex;
+    }
+    .nav-login {
+        text-align: center;
+    }
+    .friends-logo {
+        width: 55%;
+        margin: 20px 0px;
+    }
+    .tournament-date {
+        width: 20%;
+        margin: 12px 0px;
+        color: rgb(209, 209, 209);
+    }
+    .tournament-name {
+        width: 80%;
+        margin: 12px 0px;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .contacts-information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .our-contacts {
+        padding: 0px 0px 0px 13px;
+        width: 100%;
+    }
+    .contacts-form {
+        padding: 0px 13px;
+        width: 100%;
+    }
+    .tournament-date {
+        width: 20%;
+        margin: 12px 0px;
+        color: rgb(209, 209, 209);
+    }
+    .tournament-name {
+        width: 80%;
+        margin: 12px 0px;
+    }
+    
+}
+@media only screen and (max-width: 540px) {
+    .row, .top-nav {   
+        flex-direction: column;
+    }
+    .top-nav, .nav-login {
+        text-align: center;
+        width: 100%;
+    }
+    .header {
+        padding: 0px 10px;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+    }
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+    .nav-login {
+        display: flex;
+        margin-left: auto;
+    }
+    .top-nav .nav-login input {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 14px;
+        border: none;
+        background-color: rgb(206, 204, 204);
+        width: 120px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .top-nav .nav-login button {
+        float: right;
+        border: none;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 5px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        cursor: pointer;
+        font-family: 'Raleway', sans-serif;
+    }
+    .top-nav a {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .top-nav {
+        padding: 10px;
+    }
+    .row {
+        display: flex;
+        padding: 0 10px;
+    }
+    main {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+    .footer {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-text 
+        #mob,
+        #faceb,
+        #envel {
+            padding: 5px;
+            font-size: 22px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+    }
+    .footer-text li {
+        list-style: none;
+        margin: 0px 5px;
+    }
+    .footer-text {
+        padding-left: 10px;
+    }
+    .copy-name {
+        text-align: center;
+        width: 100%;
+        color: rgb(255, 255, 255);
+    }
+    .copy-name p {
+        font-size: 14px;
+        margin: 0px 0px;
+    }
+    .social-media {
+        text-align: center;
+        width: 100%;
+    }
+    .footer-text {
+        display: inline-flex;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    #tournament-submit {
+        font-size: 14px;
+    }
+    .tournament-list {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        padding: 10px 0px;
+        margin: 15px 0px;
+    }
+    .tournament-date {
+        width: 40%;
+        margin: 12px 0px;
+        color: rgb(209, 209, 209);
+    }
+    .tournament-name {
+        width: 60%;
+        margin: 12px 0px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .signup-form input {
+        width: 290px;
+    }
+    #contacts input {
+        padding: 10px;
+        font-size: 15px;
+        border: none;
+        background-color: rgb(206, 204, 204);
+        width: 290px;
+    }
+    #contacts textarea {
+        padding: 10px;
+        font-size: 15px;
+        border: none;
+        background-color: rgb(206, 204, 204);
+        width: 290px;
+        height: 80px;
+    }
+}
